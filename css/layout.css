@@ -1,0 +1,50 @@
+.header, .navber, .main, .sidebar, .advertise, .footer{
+    background-color: bisque;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.header{
+    grid-area: header;
+}
+.navber{
+    grid-area: navber;
+}
+.main{
+    grid-area: main;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.advertise{
+    grid-area: advertise;
+}
+.footer{
+    grid-area: footer;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header     header      header      header"
+    "navber     main        main        sidebar"
+    "navber     main        main        advertise"
+    "navber     footer      footer      footer"
+    
+    ;
+}
+
+@media screen and (max-width: 576px) {
+    .container{
+        grid-template-areas:
+        "header"
+        "navber"
+        "main"
+        "sidebar"
+        "advertise"
+        "footer"
+        ;
+    }
+    
+}

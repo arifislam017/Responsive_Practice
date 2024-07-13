@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 10px;
+        }
+        .box{
+           padding: 10px;
+            border: 1px solid green;
+
+        }
+        @media screen and (max-width:576px) {
+            .container{flex-direction: column;}
+        }
+    </style>
+    
+</head>
+<body>
+        <div class="container">
+            <div class="box">
+                <h1>Heading one</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente nemo, dolorum quis inventore dignissimos facere incidunt explicabo debitis fuga possimus accusamus soluta. Et quae amet voluptatibus ipsa ducimus quis. Molestias excepturi qui rem quis voluptate quam? Earum incidunt deserunt fugit ea tenetur inventore aspernatur, eveniet, rerum autem porro sint corrupti.</p>
+            </div>
+
+            <div class="box"><h1>Heading two</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente nemo, dolorum quis inventore dignissimos facere incidunt explicabo debitis fuga possimus accusamus soluta. Et quae amet voluptatibus ipsa ducimus quis. Molestias excepturi qui rem quis voluptate quam? Earum incidunt deserunt fugit ea tenetur inventore aspernatur, eveniet, rerum autem porro sint corrupti.</p>
+            </div>
+
+            <div class="box"><h1>Heading three</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente nemo, dolorum quis inventore dignissimos facere incidunt explicabo debitis fuga possimus accusamus soluta. Et quae amet voluptatibus ipsa ducimus quis. Molestias excepturi qui rem quis voluptate quam? Earum incidunt deserunt fugit ea tenetur inventore aspernatur, eveniet, rerum autem porro sint corrupti.</p>
+            </div>
+        </div>
+</body>
+</html>
